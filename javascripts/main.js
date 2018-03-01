@@ -3,7 +3,7 @@
 let $ = require('jquery'),
     db = require("./db-interaction"),
     templates = require("./dom-builder");
-    // login = require("./user");
+    // user = require("./user");
 
 
 // Using the REST API
