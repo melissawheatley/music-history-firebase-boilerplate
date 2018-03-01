@@ -2,4 +2,5 @@ lib/.sass-cache
 .DS_Store
 dist/
 css/
-lib/node_modules
+lib/node_module
+lib/package-lock.json
