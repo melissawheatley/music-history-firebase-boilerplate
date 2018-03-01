@@ -6,7 +6,7 @@ Grunt, Browserify, Sass, Firebase3
 + cd into it
 + cd into lib and run `npm install`
 + Add your Firebase credentials to `javascripts/fb-keys.js`
-+ Add `javascripts/fb-keys.js` to your **.gitignore**
++ Add `javascripts/fb-key.js` to your **.gitignore**
 + Run Grunt to compile the CSS and JS files
 + Add logic for getting, adding, editing, and deleting songs:
     + `main.js` and `db-interactions.js`
