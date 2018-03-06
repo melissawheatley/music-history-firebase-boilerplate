@@ -1,6 +1,6 @@
 "use strict";
 
-let $ = require('jquery'),
+let $ = require('jQuery'),
     db = require("./db-interaction"),
     templates = require("./dom-builder"),
     login = require("./user");
