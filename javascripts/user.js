@@ -31,3 +31,4 @@ firebase.auth().onAuthStateChanged(function(user){
 });
 
 module.exports = {logInGoogle, logOut, setUser, getUser};
+
