@@ -31,7 +31,7 @@ function addSong(songFormObj) {
 
 function deleteSong(songId) {
   return $.ajax({
-    url: `${firebase.getFBsettings().databaseURL}/songs.json/songs/${songId}.json`,
+    url: `${firebase.getFBsettings().databaseURL}/songs/${songId}.json`,
     method: 'DELETE'
   }).done((data) =>{
     return data;
@@ -40,7 +40,7 @@ function deleteSong(songId) {
 
 function getSong(songId) {
   return $.ajax({
-    url: `${firebase.getFBsettings().databaseURL}/songs.json/songs/${songId}.json`
+    url: `${firebase.getFBsettings().databaseURL}/songs/${songId}.json`
   }).done((songData) =>{
     return songData;
   }).fail((error) =>{
@@ -52,7 +52,7 @@ function getSong(songId) {
 // PUT - Update data to a specified resource. Takes two parameters.
 function editSong(songFormObj, songId) {
   return $.ajax({
-    url: `${firebase.getFBsettings().databaseURL}/songs.json/songs/${songId}.json`,
+    url: `${firebase.getFBsettings().databaseURL}/songs/${songId}.json`,
     type: 'PUT',
     data: JSON.stringify(songFormObj),
     dataType: "json"
